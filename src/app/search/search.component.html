@@ -8,7 +8,19 @@
             <span class="example-spacer"></span>
             <span><strong>Followers:</strong>&nbsp;<em>{{ user.followers }}</em></span>
         </mat-toolbar-row>
-        
+    <mat-toolbar-row>
+        <i class="material-icons">person</i>&nbsp;
+        <span>{{ user.login }}</span>
+        <span class="example-spacer"></span>
+        <span><strong>Following:</strong>&nbsp;<em>{{ user.following }}</em></span>
+     </mat-toolbar-row>
+     <mat-toolbar-row>
+        <i class="material-icons">room</i>&nbsp;
+        <span>{{ user.location }}</span>
+        <span class="example-spacer"></span>
+      </mat-toolbar-row>
+  
+
           
             
             
