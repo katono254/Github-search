@@ -45,17 +45,22 @@
              [matRippleRadius]="radius"
              [matRippleColor]="color">
               <div style="width: 50%;">
-                    <br>
-                    <em>{{ repo.owner.login }}</em>
-                  </div>
-                  <div style=" text-align: center;width: 50%;">
-                    <strong>{{ repo.name }}</strong><br>
-                    <ul>
-                      <li>{{ repo.language }}</li>
-                    </ul>
-                  </div>
-                </mat-card>
-              </a>
-            </div>
-           </div>
+                   <br>
+          <em>{{ repo.owner.login }}</em>
+        </div>
+        <div style="text-align: center;width: 50%;">
+          <strong>{{ repo.name }}</strong><br>
+          <ul>
+            <li>{{ repo.language }}</li>
+          </ul>
+        </div>
+      </mat-card>
+    </a>
+  </div>
+ </div>
+
+<button mat-mini-fab aria-label="Example icon-button with a heart icon" class="btn" routerLink="/git">
+  <!-- <mat-icon>home</mat-icon> -->
+  <i class="material-icons" id="bttn">home</i>&nbsp;
+</button>
   
