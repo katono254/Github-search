@@ -23,6 +23,13 @@ export class SearchComponent implements OnInit {
   r: any;
 
   constructor(private route: ActivatedRoute, public gitService: GithubService) { }
+  ngOnInit() {
+    this.routeSub = this.route.params.subscribe(params=>{
+      console.log(params);
+      this.p = params.q;
+      console.log(this.p)
+      this.r = params.w;
+      console.log(this.r)
 
   ngOnInit() {
   }
