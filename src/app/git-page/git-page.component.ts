@@ -15,6 +15,25 @@ export class GitPageComponent implements OnInit {
   term: any;
 
   constructor(private router: Router) { }
+  submitSearch(queryTerm){
+    this.query = queryTerm.value['q']
+    console.log(this.query);
+    if (this.query){
+      this.router.navigate(['/search', {q: this.query}])
+    }
+  }
+
+  formToggle(){
+    this.show = !this.show;
+  }
+
+  repoSearch(searchTerm){
+    this.term = searchTerm.value['w']
+    console.log(this.term);
+    if (this.term){
+      this.router.navigate(['/search', {w: this.term}])
+    }
+  }
 
   ngOnInit() {
   }
