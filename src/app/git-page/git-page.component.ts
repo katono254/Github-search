@@ -14,7 +14,7 @@ export class GitPageComponent implements OnInit {
   query: any;
   term: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

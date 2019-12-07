@@ -1,3 +1,18 @@
+<div class="cover">
+    <div class="container wrap">
+      <div *ngIf="show">
+        <form class="example-form" #searchForm='ngForm' (ngSubmit)='submitSearch(searchForm)'>
+          <mat-form-field class="example-full-width" width="100%">
+            <input matInput type="text" placeholder="Github UserName" name='q' ngModel>
+          </mat-form-field>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button mat-raised-button color="primary" type="submit">Search User</button>
+        </form>
+        
 
+
+        </div>
+     </div>
+ </div>
 
 
