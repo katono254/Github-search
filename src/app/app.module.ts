@@ -17,6 +17,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatRippleModule} from '@angular/material/core';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -40,6 +41,8 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     MatRippleModule,
     MatTooltipModule,
+    MatInputModule,
+    MatFormFieldModule,
 
 
   ],
