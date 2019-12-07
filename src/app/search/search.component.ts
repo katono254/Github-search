@@ -22,7 +22,7 @@ export class SearchComponent implements OnInit {
   p: any;
   r: any;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, public gitService: GithubService) { }
 
   ngOnInit() {
   }
