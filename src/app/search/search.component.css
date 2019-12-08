@@ -11,3 +11,7 @@
     left: 15%;
     top: 30%;
   }
+  .cover{
+    margin:  0;
+    height: 100%;
+  }
