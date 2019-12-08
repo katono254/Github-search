@@ -10,7 +10,9 @@ import{environment} from '../environments/environment'
 export class GithubService {
   private serverPath: string = AppConst.serverPath;
   private sPath: string = AppConst.Path;
+  dats:any;
 
 
   constructor(private http:HttpClient) { }
+  
 }
