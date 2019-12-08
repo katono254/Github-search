@@ -56,6 +56,14 @@ export class SearchComponent implements OnInit {
           this.repos = data["items"];
           console.log(this.repos);
         },
+        (error)=>{
+          console.log(error)
+        })
+      }
+    })
+  }
+}
+      
 
       
 
