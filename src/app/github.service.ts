@@ -8,6 +8,7 @@ import{environment} from '../environments/environment'
   providedIn: 'root'
 })
 export class GithubService {
+  [x: string]: any;
   private serverPath: string = AppConst.serverPath;
   private sPath: string = AppConst.Path;
   dats:any;

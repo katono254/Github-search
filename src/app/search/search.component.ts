@@ -30,6 +30,17 @@ export class SearchComponent implements OnInit {
       console.log(this.p)
       this.r = params.w;
       console.log(this.r)
+      if(this.p){
+        // IF UserName is entered
+        this.gitService.getUser(this.p).subscribe(data=>{
+          this.user = data
+          console.log(this.user);
+
+            // start of another fx for current users repos
+          this.gitService.getUserRepo(this.user.repos_url).subscribe(data=>{
+            this.dat = data;
+            console.log(this.dat)
+          },
 
       
 
