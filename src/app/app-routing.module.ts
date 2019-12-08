@@ -8,7 +8,12 @@ import{SearchComponent} from './search/search.component';
 
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:"git", component:GitPageComponent},
+  {path:"search",component:SearchComponent},
+
+  {path:"",pathMatch:"full",redirectTo:"git"}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
