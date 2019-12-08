@@ -30,9 +30,7 @@ export class SearchComponent implements OnInit {
       console.log(this.p)
       this.r = params.w;
       console.log(this.r)
+
       
 
-  ngOnInit() {
-  }
-
-}
+    
