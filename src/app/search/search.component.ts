@@ -41,6 +41,21 @@ export class SearchComponent implements OnInit {
             this.dat = data;
             console.log(this.dat)
           },
+          (error)=>{
+            console.log(error)
+          });
+          // ************
+        },
+        (error)=>{
+          console.log(error)
+        })
+
+      }else if(this.r){
+        // IF Repo Name is entered
+        this.gitService.getRepos(this.r).subscribe(data=>{
+          this.repos = data["items"];
+          console.log(this.repos);
+        },
 
       
 
