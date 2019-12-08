@@ -12,5 +12,5 @@ export class GithubService {
   private sPath: string = AppConst.Path;
 
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 }
