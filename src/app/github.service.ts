@@ -29,5 +29,12 @@ export class GithubService {
 
     return this.http.get(url);
   }
+  getRepos(param){
+    console.log(param);
+    let url = this.sPath + param + "&?access_token=" + environment.APIKEY;
+    console.log(url);
+
+    return this.http.get(url);
+  }
   
 }
