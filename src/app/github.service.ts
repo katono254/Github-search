@@ -15,5 +15,12 @@ export class GithubService {
 
 
   constructor(private http:HttpClient) { }
+  getUser(param){
+    console.log(param);
+    let url = this.serverPath + param + "?access_token=" + environment.APIKEY;
+    console.log(url);
+
+    return this.http.get(url);
+  }
   
 }
